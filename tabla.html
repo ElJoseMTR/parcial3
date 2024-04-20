@@ -110,13 +110,13 @@ async function cargarDatos() {
             celdaPaciente.textContent = dato.Paciente;
             fila.appendChild(celdaPaciente);
 
-            const celdaExamen = document.createElement('td');
-            celdaExamen.textContent = dato.examen;
-            fila.appendChild(celdaExamen);
-
             const celdaResultado = document.createElement('td');
             celdaResultado.textContent = dato.resultado;
             fila.appendChild(celdaResultado);
+
+            const celdaExamen = document.createElement('td');
+            celdaExamen.textContent = dato.examen;
+            fila.appendChild(celdaExamen);
 
 
             cuerpoTabla.appendChild(fila);
